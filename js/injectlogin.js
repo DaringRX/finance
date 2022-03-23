@@ -18,6 +18,12 @@ function entrar(){
         usuario: '',
         senha: ''
     }
+    
+    if(usuario.value == '' || senha.value == ''){
+            alert('Preencha todos os campos');
+            usuario.focus();
+            return false;
+        }
 
 
     cadastros = JSON.parse(localStorage.getItem('cadastros'))
@@ -33,11 +39,7 @@ function entrar(){
     })
     if(usuario.value == usuarioValidado.usuario && senha.value == usuarioValidado.senha){
         
-        if(usuario.value == '' || senha.value == ''){
-            alert('Preencha todos os campos');
-            usuario.focus();
-            return false;
-        }
+        
 
         usuario.setAttribute('style', 'border-color: green')
         labelUsuario.setAttribute('style', 'color: green')
