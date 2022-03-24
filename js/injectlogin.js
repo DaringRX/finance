@@ -6,7 +6,6 @@ let btn = document.querySelector('.fa-eye')
 //Funções
 
 
-
 function entrar(){
     let labelUsuario = document.querySelector('#labelUsuario')
     let labelSenha = document.querySelector('#labelSenha')
@@ -54,6 +53,7 @@ function entrar(){
         localStorage.setItem('token', token)
 
         window.location.href = './logado.html'
+        
 
     } else{
         usuario.setAttribute('style', 'border-color: red')

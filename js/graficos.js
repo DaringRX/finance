@@ -1,6 +1,8 @@
 
-  
-
+if(localStorage.getItem('token') == null){
+    alert('Você precisa estar logado !')
+    window.location.href = './index.html'
+}
 
   window.onload = function(){
       
@@ -71,3 +73,8 @@
     config2
   );
   }
+
+function btnSair(){
+    localStorage.removeItem('token')
+    window.location.href = './index.html'
+}
