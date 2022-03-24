@@ -45,7 +45,8 @@ body {
     text-decoration: none;
     color: black; 
     font-size: 20px;
-    letter-spacing: .2rem;
+    letter-spacing: .2rem;    
+    font-family: 'Nunito', sans-serif;
 }
 
 .btns {
