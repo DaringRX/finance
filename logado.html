@@ -10,31 +10,45 @@
     <title>Logado com sucesso</title>
 </head>
 <body>
-    <header>
-        <div class="mmenu">
+    <div class="menu">
+        <ul class="mmenu">
 
-                   <i class="fa fa-dashboard" aria-hidden="true"></i>
-                   <a class="mlist" href="#">Dashboard</a>
-                   <i class="fa fa-exchange" aria-hidden="true"></i>
-                   <a class="mdlist" href="#">Declarar</a>
-                   <i class="fa fa-handshake-o" aria-hidden="true"></i>
-                   <a class="mrlist" href="#">Receber</a>
+                <li class="mlist mb"><a href="#"><i class="fa fa-dashboard" aria-hidden="true">   Painel</i></a></li>
+                <li class="mlist mb"><a href="#"><i class="fa fa-exchange" aria-hidden="true">   Declarar</i></a></li>                   
+                <li class="mlist"><a href="#"><i class="fa fa-handshake" aria-hidden="true">   Negócios</i></a></li>
 
-        </div>
-    </header>
+        </ul>
+    </div>
 
 
     <div class="container">
-        <div class="card">
-            <h1>Dashboard</h1>
+            <div class="card">
+                <div class="titulograf"><p>Gastos Diário</p></div>
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <div class="card">
+                <div class="titulograf"><p>Gastos Mensais</p></div>
+                <canvas id="myChart2"></canvas>
+            </div>            
+    </div>
+
+    <div class="container">
+
+        <div class="card"></div>
+
+    </div>
+
+
+    <div class="fter">
+        <div class="btns">
+            <button class="btnsair"><i class="fa fa-sign-out" aria-hidden="true"></i></button>
         </div>
     </div>
 
 
-    <footer class="fter">
-        <div class="btns">
-            <button class="btnsair"><i class="fa fa-sign-out" aria-hidden="true"></i></button>
-        </div>
-    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="./js/graficos.js"></script>
 </body>
 </html>
